@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B76D7677"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="Sign Up!"
+        android:textColorHint="#F8F4F4"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="169dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="#F8E8E5E5"
+        android:textColorHint="#F8E8E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittextborder"
+        android:ems="10"
+        android:hint="phone"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textColor="#F8E8E5E5"
+        android:textColorHint="#F8E8E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittextborder"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#F8E8E5E5"
+        android:textColorHint="#F8E8E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/phoneEditText"
+        app:layout_constraintStart_toStartOf="@+id/phoneEditText"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditText" />
+
+    <EditText
+        android:id="@+id/repasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittextborder"
+        android:ems="10"
+        android:hint="repassword"
+        android:inputType="text|textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#F8E8E5E5"
+        android:textColorHint="#F8E8E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/edittextborder"
+        android:onClick="signup"
+        android:text="Sign Up!"
+        android:textAllCaps="false"
+        android:textColor="#F8E8E5E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repasswordEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
