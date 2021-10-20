@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lesson03">
         <activity
+            android:name=".screenMain"
+            android:exported="true"
+            android:label="@string/title_activity_screen_main" />
+        <activity
             android:name=".signin"
             android:exported="false" />
         <activity
