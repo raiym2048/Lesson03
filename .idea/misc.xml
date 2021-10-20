@@ -4,7 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/drawable/edittextborder.xml" value="0.2203125" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/drawable/feelings_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/activity_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/activity_screen2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/activity_signin.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/feeling_recycler_item.xml" value="0.75" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lesson03/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
       </map>
     </option>
   </component>
