@@ -10,12 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lesson03">
         <activity
-            android:name=".ScreenActivity"
-            android:exported="false"
-            android:label="@string/title_activity_screen" />
-        <activity
-            android:name=".screen"
-            android:exported="false" />
+            android:name=".screenMain"
+            android:exported="true"
+            android:label="@string/title_activity_screen_main" />
         <activity
             android:name=".signin"
             android:exported="false" />

@@ -9,12 +9,12 @@ class signin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
     }
-    fun signin(view: android.view.View){
-        val intent = Intent(this,ScreenActivity::class.java)
+    fun toscreen(view: android.view.View){
+        val intent = Intent(this, screenMain::class.java)
         startActivity(intent)
     }
-    fun register(view: android.view.View){
-        val intent = Intent(this,MainActivity::class.java)
+    fun tosignup(view: android.view.View){
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }
