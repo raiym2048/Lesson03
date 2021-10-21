@@ -8,33 +8,39 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.RecyclerView
 import com.example.lesson03.R
 import com.example.lesson03.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class omeFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    val list: ArrayList<FeelingsItem> = arrayListOf(
+        FeelingsItem(R.drawable.ic_calm___icon, "Calm"),
+        FeelingsItem(R.drawable.ic_calm___icon, "Angry"),
+        FeelingsItem(R.drawable.ic_calm___icon, "excited"),
+        FeelingsItem(R.drawable.ic_calm___icon, "sleeping"),
+        FeelingsItem(R.drawable.ic_calm___icon, "Calm"),
+        FeelingsItem(R.drawable.ic_calm___icon, "Angry"),
+        FeelingsItem(R.drawable.ic_calm___icon, "excited"),
+        FeelingsItem(R.drawable.ic_calm___icon, "sleeping"),
+
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+        val recyclerView : RecyclerView = root.findViewById(R.id.feelingsRecyclerView)
+        recyclerView.adapter = FeelingsRecylcerAdapter(list,requireContext())
         return root
     }
 

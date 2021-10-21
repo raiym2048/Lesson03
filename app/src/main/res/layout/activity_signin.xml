@@ -70,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:fontFamily="@font/carattere_regular"
+        android:minHeight="48dp"
         android:onClick="tosignup"
         android:text="Register"
         android:textColor="@color/white"

@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="22dp"
-        android:fontFamily="@font/alegra_font"
-        android:text="Заголовок блока"
+        android:fontFamily="@font/allegra"
+        android:text="Block header"
         android:textColor="@color/buttom"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,10 +23,10 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="36dp"
-        android:fontFamily="@font/alegra_font"
-        android:text="Кратенькое описание блока с двумя строчками"
+        android:fontFamily="@font/allegra"
+        android:text="Brief description of the block with two lines"
         android:textColor="@color/buttom"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -46,12 +46,13 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
         android:layout_width="138dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/state_buttom"
         android:text="Подробнее"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
