@@ -7,21 +7,21 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.lesson03.databinding.ActivityScreen2Binding
+import com.example.lesson03.databinding.ActivityScreenMainBinding
 
 class ScreenActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityScreen2Binding
+    private lateinit var binding: ActivityScreenMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityScreen2Binding.inflate(layoutInflater)
+        binding = ActivityScreenMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_screen2)
+        val navController = findNavController(R.id.nav_host_fragment_activity_screen_main)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         /*val appBarConfiguration = AppBarConfiguration(
@@ -32,4 +32,9 @@ class ScreenActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)*/
         navView.setupWithNavController(navController)
     }
+    /**
+     *
+     */
+    //class ActivityScreen2Binding
+
 }

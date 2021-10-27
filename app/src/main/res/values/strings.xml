@@ -4,4 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="block_header">Block header</string>
+    <string name="brief_description_of_the_block_with_two_lines">Brief description of the block with two lines</string>
 </resources>

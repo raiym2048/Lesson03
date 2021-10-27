@@ -18,7 +18,8 @@ class FeelingsRecylcerAdapter(val list:ArrayList<FeelingsItem>, val context:Cont
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val root = LayoutInflater.from(context).inflate(R.layout.feeling_recycler_item,parent,true)
+        val root = LayoutInflater.from(context).inflate(R.layout.feeling_recycler_item,parent,false)
+
         return MyViewHolder(root)
     }
 
