@@ -22,9 +22,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/stateRecyclerView"
         android:layout_width="wrap_content"
-        android:layout_height="366dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:foregroundGravity="center"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,6 +31,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feelingsRecyclerView"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/state_recycler_item">
 
     </androidx.recyclerview.widget.RecyclerView>
@@ -41,7 +41,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="99dp"
         android:layout_marginEnd="18dp"
         android:fontFamily="@font/allegra"
         android:text="Wellcome, Emil!"
@@ -62,4 +61,5 @@
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

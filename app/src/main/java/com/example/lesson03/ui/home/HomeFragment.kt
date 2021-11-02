@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lesson03.R
 import com.example.lesson03.databinding.FragmentHomeBinding
@@ -15,10 +12,8 @@ import com.example.lesson03.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
     val list: ArrayList<FeelingsItem> = arrayListOf(
         FeelingsItem(R.drawable.ic_calm___icon, "Calm"),
         FeelingsItem(R.drawable.ic_calm___icon, "Angry"),
@@ -31,6 +26,7 @@ class HomeFragment : Fragment() {
 
         )
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -41,6 +37,8 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
         val recyclerView : RecyclerView = root.findViewById(R.id.feelingsRecyclerView)
         recyclerView.adapter = FeelingsRecylcerAdapter(list,requireContext())
+
+        //val stateView: StateView
         return root
     }
 

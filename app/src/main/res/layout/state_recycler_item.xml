@@ -9,7 +9,7 @@
     android:scrollbarSize="15sp">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/state_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -22,17 +22,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/state_text2"
         android:layout_width="150dp"
         android:layout_height="36dp"
         android:fontFamily="@font/allegra"
         android:text="@string/brief_description_of_the_block_with_two_lines"
         android:textColor="@color/buttom"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/state_text"
+        app:layout_constraintTop_toBottomOf="@+id/state_text" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/state_image"
         android:layout_width="168dp"
         android:layout_height="111dp"
         android:layout_marginStart="175dp"
@@ -45,7 +45,7 @@
         android:contentDescription="TODO" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/state_button"
         android:layout_width="138dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
@@ -53,7 +53,7 @@
         android:text="Подробнее"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintEnd_toEndOf="@+id/state_text"
+        app:layout_constraintStart_toStartOf="@+id/state_text2"
+        app:layout_constraintTop_toBottomOf="@+id/state_text2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

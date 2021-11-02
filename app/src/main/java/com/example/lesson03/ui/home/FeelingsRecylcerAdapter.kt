@@ -8,12 +8,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lesson03.R
-import java.security.AccessControlContext
 
-class FeelingsRecylcerAdapter(val list:ArrayList<FeelingsItem>, val context:Context): RecyclerView.Adapter<FeelingsRecylcerAdapter.MyViewHolder>() {
+class FeelingsRecylcerAdapter(val list: ArrayList<FeelingsItem>, val context:Context): RecyclerView.Adapter<FeelingsRecylcerAdapter.MyViewHolder>() {
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val image:ImageView = itemView.findViewById(R.id.feelings_image)
-        val feelingsText:TextView = itemView.findViewById(R.id.feelings_text)
+        val image3:ImageView = itemView.findViewById(R.id.feelings_image)
+        val feelingsText3:TextView = itemView.findViewById(R.id.feelings_text)
 
     }
 
@@ -24,8 +23,8 @@ class FeelingsRecylcerAdapter(val list:ArrayList<FeelingsItem>, val context:Cont
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.image.setImageResource(list[position].image)
-        holder.feelingsText.text = list[position].text
+        holder.image3.setImageResource(list[position].image)
+        holder.feelingsText3.text = list[position].text
 
     }
 
